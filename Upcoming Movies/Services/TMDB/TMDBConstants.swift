@@ -20,8 +20,16 @@ extension TMDBClient {
         static let ApiScheme = "https"
         static let ApiHost = "api.themoviedb.org"
         static let ApiPath = "/3"
-        static let AuthorizationURL = "https://www.themoviedb.org/authenticate/"
-        static let AccountURL = "https://www.themoviedb.org/account/"
-        
+    }
+    
+    //MARK: Methods
+    struct Methods {
+        static let UpcomingMovies = "/movie/upcoming"
+    }
+    
+    //MARK: Parameter Keys
+    struct ParameterKeys {
+        static let ApiKey = "api_key"
+        static let Page = "page"
     }
 }
