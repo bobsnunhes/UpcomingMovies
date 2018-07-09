@@ -19,8 +19,6 @@ class MovieDetailsViewController: UIViewController {
     @IBOutlet weak var movieOverview: UITextView!
     @IBOutlet weak var releaseDate: UILabel!
     
-    
-    
     var selectedMovie: Result?
     
     let imageCache = NSCache<AnyObject, AnyObject>()
@@ -61,8 +59,6 @@ class MovieDetailsViewController: UIViewController {
                 }
             }
         }
-        
-        
     }
     
     @IBAction func backToUpcomingMovies(_ sender: Any) {
