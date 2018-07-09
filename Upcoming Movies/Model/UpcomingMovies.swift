@@ -32,13 +32,13 @@ struct Result: Codable {
     let voteAverage: Double
     let title: String
     let popularity: Double
-    let posterPath: String
-    let originalLanguage: String
+    let posterPath: String?
+    let originalLanguage: String?
     let originalTitle: String
-    let genreIDS: [Int]
-    let backdropPath: String
+    let genreIDS: [Int]?
+    let backdropPath: String?
     let adult: Bool
-    let overview, releaseDate: String
+    let overview, releaseDate: String?
     
     enum CodingKeys: String, CodingKey {
         case voteCount = "vote_count"

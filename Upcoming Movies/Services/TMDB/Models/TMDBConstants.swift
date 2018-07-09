@@ -24,12 +24,17 @@ extension TMDBClient {
     
     //MARK: Methods
     struct Methods {
+        static let ImageConfiguration = "/configuration"
         static let UpcomingMovies = "/movie/upcoming"
     }
     
     //MARK: Parameter Keys
     struct ParameterKeys {
         static let ApiKey = "api_key"
+    }
+    
+    //MARK: URL Keys
+    struct URLKeys {
         static let Page = "page"
     }
 }
